@@ -5,10 +5,6 @@
 /* Inserción al final de la lista doblemente enlazada */
 void inserirContêiner(Nodo **cab, Contêiner novoDado) {
     Nodo *novo = (Nodo *)malloc(sizeof(Nodo));
-    if (novo == NULL) {
-        printf("Error: Memoria insuficiente para registrar el contenedor.\n");
-        return;
-    }
 
     novo->dato = novoDado;
     novo->sig = NULL;

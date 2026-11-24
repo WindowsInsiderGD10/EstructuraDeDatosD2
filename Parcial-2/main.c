@@ -104,7 +104,7 @@ int main(void) {
                 scanf("%d", &idEliminar);
 
                 if (removerContêiner(&lista, idEliminar)) {
-                    printf(">> El contenedor con ID %d ha sido retirado y la memoria ha sido liberada exitosamente.\n", idEliminar);
+                    printf(">> El contenedor con ID %d ha sido retirado exitosamente.\n", idEliminar);
                 } else {
                     printf(">> No se pudo retirar: El contenedor con ID %d no fue encontrado o no existe.\n", idEliminar);
                 }
@@ -134,7 +134,7 @@ int main(void) {
             }
 
             case 0:
-                printf("\nLiberando recursos de memoria y saliendo del sistema...\n");
+                printf("\nSaliendo del sistema...\n");
                 liberarLista(&lista);
                 printf("Programa finalizado exitosamente.\n");
                 break;
